@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Business Tracking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agricultural Business Tracking System</h1>
+        
+        <!-- Form for adding expenses -->
+        <form id="expenseForm">
+            <h2>Add Expenses</h2>
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="seeds">Seeds</option>
+                <option value="fertilizers">Fertilizers</option>
+                <option value="labor">Labor</option>
+            </select>
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" min="0" step="0.01" required>
+            <button type="submit">Submit</button>
+        </form>
+        
+        <!-- Placeholder for displaying expenses -->
+        <div id="expensesTable">
+            <h2>Display Expenses</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="expensesBody">
+                    <!-- Expense data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Placeholder for visualizing expenses -->
+        <div id="expensesChart">
+            <h2>Visualize Expenses</h2>
+            <canvas id="myChart"></canvas>
+        </div>
+        
+        <!-- Budgeting section -->
+        <div id="budgeting">
+            <h2>Budgeting</h2>
+            <label for="budget">Set Budget for:</label>
+            <select id="budgetCategory" name="budgetCategory">
+                <option value="seeds">Seeds</option>
+                <option value="fertilizers">Fertilizers</option>
+                <option value="labor">Labor</option>
+            </select>
+            <label for="budgetAmount">Amount:</label>
+            <input type="number" id="budgetAmount" name="budgetAmount" min="0" step="0.01" required>
+            <button id="setBudgetBtn">Set Budget</button>
+            <p id="budgetAlert" class="alert"></p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
