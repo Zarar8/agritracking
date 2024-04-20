@@ -1,13 +1,13 @@
 // scripts.js
 
 // Google Sheets API endpoint
-const SHEET_ID = '1ry7UDyNv2BzXRjQ3uFjhFge912Rgtxb62uF6QH3zTc';
+const SHEET_ID = '1ry7 UDyNv2BzXRjQ3uFjhFge912Rgtxb62uF6QH3zTc';
 const API_KEY = '418289000009-u4kqg78c0o204hkpiceoq2su1v4qhoq6.apps.googleusercontent.com';
 const SHEET_NAME = 'expenses';
 
 // Function to add expenses to Google Sheets
 function addExpense(category, amount) {
-    const url = https://sheets.googleapis.com/v4/spreadsheets/${1ry7UDyNv2BzXRjQ3uFjhFge912Rgtxb62uF6QH3zTc}/values/${expenses}:append?valueInputOption=USER_ENTERED&key=${418289000009-u4kqg78c0o204hkpiceoq2su1v4qhoq6.apps.googleusercontent.com};
+    const url = https://sheets.googleapis.com/v4/spreadsheets/${1ry7 UDyNv2BzXRjQ3uFjhFge912Rgtxb62uF6QH3zTc}/values/${expenses}:append?valueInputOption=USER_ENTERED&key=${418289000009-u4kqg78c0o204hkpiceoq2su1v4qhoq6.apps.googleusercontent.com};
     const data = {
         values: [[category, amount, new Date().toLocaleString()]]
     };
@@ -36,7 +36,7 @@ function addExpense(category, amount) {
 
 // Function to fetch expenses from Google Sheets
 function fetchExpenses() {
-    const url = https://sheets.googleapis.com/v4/spreadsheets/${1ry7UDyNv2BzXRjQ3uFjhFge912Rgtxb62uF6QH3zTc}/values/${expenses}?key=${418289000009-u4kqg78c0o204hkpiceoq2su1v4qhoq6.apps.googleusercontent.com};
+    const url = https://sheets.googleapis.com/v4/spreadsheets/${1ry7 UDyNv2BzXRjQ3uFjhFge912Rgtxb62uF6QH3zTc}/values/${expenses}?key=${418289000009-u4kqg78c0o204hkpiceoq2su1v4qhoq6.apps.googleusercontent.com};
 
     fetch(url)
     .then(response => response.json())
